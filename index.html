@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Cousine&family=Montserrat:wght@300;400;500;600;700;800&family=PT+Mono&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="generatePDF.js"></script>
+    <script src="shuffleWord.js"></script>
+    <script src="generateDOM.js"></script>
+    <script src="generateLines.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-heading">
+            <p class="heading-hint">Separate words with comma, without the space</p>
+            <textarea rows="4" cols="50" id="textareaData"></textarea>
+            <div class="container-buttons">
+                <button type="button" onclick="generateForm()">Generate Word Scramble</button>
+                <button type="button" onclick="reGenerateForm()">Regenerate</button>
+                <button onclick="generatePDF()">Generate PDF</button>
+            </div>
+
+        </div>
+
+        <div class="container-content" id="container-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
